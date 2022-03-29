@@ -3,7 +3,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-// 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
 	whats: {
 		primary: "#006666",
@@ -19,7 +18,6 @@ const colors = {
 
 const theme = extendTheme({ colors });
 
-// Find all widget divs
 const whatsappWidget = document.querySelectorAll(".whatsapp-widget");
 
 whatsappWidget.forEach((Div) => {
