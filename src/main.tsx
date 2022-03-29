@@ -19,11 +19,16 @@ const colors = {
 
 const theme = extendTheme({ colors });
 
-ReactDOM.render(
-	<React.StrictMode>
-		<ChakraProvider theme={theme}>
-			<App />
-		</ChakraProvider>
-	</React.StrictMode>,
-	document.getElementById("root")
-);
+// Find all widget divs
+const whatsappWidget = document.querySelectorAll(".whatsapp-widget");
+
+whatsappWidget.forEach((Div) => {
+	ReactDOM.render(
+		<React.StrictMode>
+			<ChakraProvider theme={theme}>
+				<App />
+			</ChakraProvider>
+		</React.StrictMode>,
+		Div
+	);
+});
